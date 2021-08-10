@@ -1,5 +1,8 @@
 package com.gaoyj.submodule;
 
+import android.content.Context;
+import android.widget.Toast;
+
 /**
  * 测试
  * @author 517987
@@ -11,8 +14,8 @@ public enum Test {
         return INSTANCE;
     }
 
-    public void test(){
-
+    public void test(Context context){
+        Toast.makeText(context, "子模块 测试", Toast.LENGTH_SHORT).show();
     }
 
 }
